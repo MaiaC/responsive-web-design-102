@@ -1,0 +1,91 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Puppy Love</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div id="header">
+		<div id="header-container">
+			<img src="puppy-love-logo.png" alt="Puppy Love Logo" id="logo-img">
+			<div id="header-links">
+				<a href="#">Features</a>
+				<a href="#">Stories</a>
+				<a href="#">Photos</a>
+				<a href="#">Login</a>
+			</div>
+			<img src="menu-icon.png" alt="Menu Button" onclick="responsiveMenu()" id="menu-icon">
+		</div>
+	</div>	
+
+	<div id="banner-image">
+		<div id="banner-text">
+			<h1>Main Heading</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus, mi non ornare mattis, sed rhoncus massa justo vitae massa.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus, est ex consequat quam, sed rhoncus massa justo vitae massa.</p>
+		</div>	
+	</div>
+
+	<div id="row-container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus, mi non ornare mattis, est ex consequat quam, sed rhoncus massa justo vitae massa.</p>
+		<div id="image-row">
+			<img src="beagle.png" alt="Beagle">
+			<img src="rottweiler.png" alt="Rottweiler">
+			<img src="yorkshire-terrier.png" alt="Yorkshire Terrier">
+			<img src="labrador.png" alt="Labrador">
+			<img src="pomeranian.png" alt="Pomeranian">
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="feature-block">
+		<div class="feature-text">
+			<h2>Ralphie</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id ligula nec felis mattis porta et tempus odio. Sed eget commodo lectus.</p>
+		</div>
+		<img src="beagle-square.jpg" alt="Ralphie the Beagle">
+	</div>
+
+	<hr>
+
+	<div class="feature-block" id="reverse">
+		<div class="feature-text">
+			<h2>Fluff and Fuzz</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id ligula nec felis mattis porta et tempus odio. Sed eget commodo lectus.</p>
+		</div>
+		<img src="pomeranian-square.jpg" alt="Fluff and Fuzz the Pomeranians">
+	</div>
+
+	<hr>
+
+	<div class="feature-block">
+		<div class="feature-text">
+			<h2>Alfonso</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id ligula nec felis mattis porta et tempus odio. Sed eget commodo lectus.</p>
+		</div>
+		<img src="dalmatian-square.jpg" alt="Alfonso the Dalmatian">
+	</div>
+	
+	<div id="footer">
+		<p>Please follow me on <a href="www.facebook.com/myname" target="_blank">Facebook</a>!</p>
+	</div>
+
+	<script type="text/javascript">
+		
+		function responsiveMenu() {
+			var links = document.getElementById("header-links");
+			if (links.className === "") {
+				links.className = "visible";
+			} else {
+				links.className = "";
+			}
+		}
+
+	</script>
+
+
+</body>
+</html>

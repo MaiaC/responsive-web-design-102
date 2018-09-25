@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+#header {
+	background-color: #d7efd9;
+	height: 70px;
+}
+
+#header-container {
+	padding: 10px 30px;
+}
+
+#logo-img {
+	width: 80px;
+	margin: 2px;
+}
+
+#header-links {
+	float: right;
+	padding-top: 13px;
+}
+
+#header-links a {
+	color: #333;
+	text-decoration: none;
+	margin-left: 30px;
+}
+
+#menu-icon {
+	width: 30px;
+	display: none;
+	cursor: pointer;
+}
+
+#banner-image {
+	background-image: url("puppy-banner.jpg");
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#banner-text {
+	color: #ddd;
+	width: 40%;
+	margin-left: 10%;
+	margin-right: auto;
+	padding-top: 5%;
+	font-weight: bold;
+	text-align: right;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 0;
+}
+
+#row-container {
+	padding: 50px;
+	text-align: center;
+}
+
+#row-container p {
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+#image-row img {
+	margin: 0 15px;
+}
+
+.feature-block {
+	padding: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+#reverse {
+	flex-direction: row-reverse;
+}
+
+.feature-block img {
+	width: 300px;
+	height: 300px;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.feature-text {
+	text-align: center;
+	width: 50%;
+	padding: 50px 20px;
+}
+
+.feature-text p {
+	font-size: 20px;
+}
+
+hr {
+	width: 80%;
+	border-style: solid;
+	border-color: lightgrey;
+}
+
+#footer {
+	color: lightsteelblue;
+	background-color: steelblue;
+	height: 50px;
+	text-align: center;
+}
+
+#footer p {
+	padding-top: 15px;
+}
+
+#footer a {
+	color: lightsteelblue;
+}
+
+@media screen and (max-width: 796px) {
+	.feature-text {
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	#header-links {
+		display: none;
+	}
+
+	#menu-icon {
+		display: block;
+		float: right;
+		margin-top: 7px;
+	}
+
+	#header-links.visible {
+		display: block;
+		position: relative;
+		top: 60px;
+		float: right;
+		background-color: black;
+		width: 130px;
+		padding-bottom: 30px;
+		padding-right: 20px;
+	}
+
+	#header-links.visible a {
+		display: block;
+		color: white;
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+	#header-links.visible + #menu-icon {
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
+
+}
